@@ -1,0 +1,59 @@
+﻿@model ProyectoWEBCOVID.Models.Persona
+@{
+    ViewData["Title"] = "Eliminar Persona";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Eliminar Persona</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-10">
+            <form method="post" asp-action="DeletePersona">
+
+                <input type="hidden" asp-for="Id" />
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Identificacion" class="control-label"></label>
+                    <input asp-for="Identificacion" class="form-control" disabled />
+                    <span asp-validation-for="Identificacion" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Nombre" class="control-label"></label>
+                    <input asp-for="Nombre" class="form-control"disabled />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Apellido" class="control-label"></label>
+                    <input asp-for="Apellido" class="form-control" disabled/>
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="FechaIngreso" class="control-label"></label>
+                    <input asp-for="FechaIngreso" class="form-control"disabled />
+                    <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Rol" class="control-label"></label>
+                    <input asp-for="Rol" class="form-control"disabled />
+                    <span asp-validation-for="Rol" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Eliminar Persona" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
