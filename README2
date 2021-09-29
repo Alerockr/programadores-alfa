@@ -1,0 +1,3 @@
+Se realiza CRUD (Crear, Editar, Listar y Elimar) para personas, queda pendiente pulir las validaciones y crear una nueva vista con los sintomas.
+en la vista sintomas si una persona presenta 3 o mas sintomas debe salir una advertencia o aviso de que necesita aislamiento.
+en el trascurso del proyecto se van a ir implementando nuevas cosas.
